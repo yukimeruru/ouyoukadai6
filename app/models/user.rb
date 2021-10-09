@@ -31,6 +31,7 @@ class User < ApplicationRecord
     else
       @user = User.all
     end
+
   end
 
   validates :name, length: {maximum: 20, minimum: 2}, uniqueness: true
